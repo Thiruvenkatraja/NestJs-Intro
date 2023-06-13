@@ -5,6 +5,7 @@ import { InjectRepository } from "@nestjs/typeorm";
 import { Client_Details } from "./Entities/ClientEntity";
 import { Repository } from "typeorm";
 import { clientDataDto } from "./Users/ClientData.dto";
+import { User } from "./Entities/userEntity.type";
 
 @Injectable()
 export class AppService {

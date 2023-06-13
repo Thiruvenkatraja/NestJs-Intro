@@ -16,13 +16,14 @@ import { AppService } from "./app.service";
 import { Response, Request } from "express";
 import { CreateUserDto } from "./Users/CreateUser.dto";
 import { clientDataDto } from "./Users/ClientData.dto";
+import { User } from "./Entities/userEntity.type";
 
 @Controller()
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
   @Get()
-  getUsers() {
+  fetchUsers() {
     return this.appService.fetchUsers();
   }
 
